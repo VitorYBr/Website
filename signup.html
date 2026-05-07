@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Mimos Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="subhero">
+      <nav class="topbar">
+        <a class="brand" href="index.html">
+          <span class="brand-flower" aria-hidden="true">
+            <svg class="brand-home-icon" viewBox="0 0 24 24" focusable="false">
+              <path d="M3 11.5 12 4l9 7.5"></path>
+              <path d="M5.5 10.5V20h13v-9.5"></path>
+              <path d="M9.5 20v-5h5v5"></path>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Mimos Oliveira</span>
+            <span class="brand-tag" data-en="Handmade pieces made with care and delicate finishing by Ana Carvalho">Peças artesanais feitas com carinho e acabamento delicado por Ana Carvalho</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" data-en="Home">Início</a>
+          <a href="shop.html" data-en="Shop">Loja</a>
+          <a href="about.html" data-en="About">Sobre</a>
+          <a href="signup.html" class="nav-button" data-en="Sign up">Cadastre-se</a>
+        </div>
+      </nav>
+      <section class="page-intro">
+        <p class="eyebrow" data-en="Signup">Cadastro</p>
+        <h1 class="page-title" data-en="Receive atelier updates.">Receba novidades do ateliê.</h1>
+        <p class="hero-text" data-en="A simple signup to follow new pieces, orders, and personalized models.">
+          Um cadastro simples para acompanhar novas peças, encomendas e modelos personalizados.
+        </p>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="signup-centered-layout">
+        <form class="signup-card signup-card-vertical" id="signup-form">
+          <p class="eyebrow" data-en="Join The List">Entre Na Lista</p>
+          <h2 data-en="Stay up to date with upcoming launches.">Fique por dentro dos próximos lançamentos.</h2>
+          <label>
+            <span data-en="First name">Primeiro nome</span>
+            <input type="text" placeholder="Seu primeiro nome" required>
+          </label>
+          <label>
+            <span data-en="Email">E-mail</span>
+            <input type="email" placeholder="voce@exemplo.com" required>
+          </label>
+          <button type="submit" data-en="I Want To Receive Updates">Quero Receber Novidades</button>
+        </form>
+      </section>
+    </main>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = 'confirm.html';
+    });
+  </script>
+  </div>
+</body>
+</html>
